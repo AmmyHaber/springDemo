@@ -17,4 +17,9 @@ public class ExampleBean {
     private void destroy() {
         System.out.println("execute destroy method");
     }
+
+    public void test(String appNo) {
+        System.out.println("执行test方法" + appNo);
+        throw new RuntimeException("这里有一个异常" + appNo);
+    }
 }

@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * @date 2020/1/9 17:08
  */
 @Service
-public class ExampleService {
+public class ExampleService2 {
 
     @Autowired
     private ExampleBean exampleBean;

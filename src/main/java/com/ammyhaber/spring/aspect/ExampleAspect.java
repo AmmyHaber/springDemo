@@ -29,9 +29,14 @@ public class ExampleAspect {
 
     }
 
-    @AfterThrowing(pointcut = "inService() && args(appNo)", throwing = "e")
-    public void test(Exception e, String appNo) {
+    @Pointcut("execution(* com.ammyhaber.spring.bean.ExampleService2.test(..))")
+    public void inService2() {
+
+    }
+
+    @AfterThrowing(pointcut = "(inService() || inService2()) && args(execution)", throwing = "e")
+    public void test(Exception e, String execution) {
         System.out.println("进入了切面方法中, " + e.getMessage());
-        System.out.println("appNo为：" + appNo);
+        System.out.println("appNo为：" + execution);
     }
 }
