@@ -1,6 +1,5 @@
 package com.ammyhaber.spring;
 
-import com.ammyhaber.spring.bean.ExampleService;
 import com.ammyhaber.spring.bean.ExampleService2;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
