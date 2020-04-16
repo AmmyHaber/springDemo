@@ -20,5 +20,7 @@ public class PublicEventApp {
 //        StartEvent endEvent = new StartEvent("this is end event");
         context.publishEvent(startEvent);
 //        context.publishEvent(endEvent);
+        context.publishEvent("I'm coming home, coming home");
+        System.out.println("----------------");
     }
 }
